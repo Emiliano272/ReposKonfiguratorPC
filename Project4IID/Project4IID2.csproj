@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13A0A93F-DEA3-450B-B44C-5E00E9EA3B8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project4IID</RootNamespace>
+    <AssemblyName>Project4IID</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.3\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.5.1.1345, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.5.1\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="UserControlsKeyboard\UCKeyboardCase0.xaml.cs">
+      <DependentUpon>UCKeyboardCase0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsKeyboard\UCKeyboardCase1.xaml.cs">
+      <DependentUpon>UCKeyboardCase1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsKeyboard\UCKeyboardCase2.xaml.cs">
+      <DependentUpon>UCKeyboardCase2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsKeyboard\UCKeyboardCase3.xaml.cs">
+      <DependentUpon>UCKeyboardCase3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsKeyboard\UCKeyboardCase4.xaml.cs">
+      <DependentUpon>UCKeyboardCase4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMouse\UCMouseCase0.xaml.cs">
+      <DependentUpon>UCMouseCase0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMouse\UCMouseCase1.xaml.cs">
+      <DependentUpon>UCMouseCase1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMouse\UCMouseCase2.xaml.cs">
+      <DependentUpon>UCMouseCase2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMouse\UCMouseCase3.xaml.cs">
+      <DependentUpon>UCMouseCase3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMouse\UCMouseCase4.xaml.cs">
+      <DependentUpon>UCMouseCase4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMouse\UCMouseCase5.xaml.cs">
+      <DependentUpon>UCMouseCase5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMonitors\UCMonitorsCase0.xaml.cs">
+      <DependentUpon>UCMonitorsCase0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMonitors\UCMonitorsCase1.xaml.cs">
+      <DependentUpon>UCMonitorsCase1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMonitors\UCMonitorsCase2.xaml.cs">
+      <DependentUpon>UCMonitorsCase2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMonitors\UCMonitorsCase3.xaml.cs">
+      <DependentUpon>UCMonitorsCase3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMonitors\UCMonitorsCase4.xaml.cs">
+      <DependentUpon>UCMonitorsCase4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsMonitors\UCMonitorsCase5.xaml.cs">
+      <DependentUpon>UCMonitorsCase5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase0.xaml.cs">
+      <DependentUpon>UCPcCase0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase1.xaml.cs">
+      <DependentUpon>UCPcCase1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase10.xaml.cs">
+      <DependentUpon>UCPcCase10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase11.xaml.cs">
+      <DependentUpon>UCPcCase11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase2.xaml.cs">
+      <DependentUpon>UCPcCase2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase3.xaml.cs">
+      <DependentUpon>UCPcCase3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase4.xaml.cs">
+      <DependentUpon>UCPcCase4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase5.xaml.cs">
+      <DependentUpon>UCPcCase5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase6.xaml.cs">
+      <DependentUpon>UCPcCase6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase7.xaml.cs">
+      <DependentUpon>UCPcCase7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase8.xaml.cs">
+      <DependentUpon>UCPcCase8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPC\UCPcCase9.xaml.cs">
+      <DependentUpon>UCPcCase9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPrimaryPage\UserControl1Keyboard.xaml.cs">
+      <DependentUpon>UserControl1Keyboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPrimaryPage\UserControl1PrimaryPage.xaml.cs">
+      <DependentUpon>UserControl1PrimaryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPrimaryPage\UserControlMonitors.xaml.cs">
+      <DependentUpon>UserControlMonitors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPrimaryPage\UserControlMous.xaml.cs">
+      <DependentUpon>UserControlMous.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsPrimaryPage\UserControlPCParts.xaml.cs">
+      <DependentUpon>UserControlPCParts.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UserControlsKeyboard\UCKeyboardCase0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsKeyboard\UCKeyboardCase1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsKeyboard\UCKeyboardCase2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsKeyboard\UCKeyboardCase3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsKeyboard\UCKeyboardCase4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMouse\UCMouseCase0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMouse\UCMouseCase1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMouse\UCMouseCase2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMouse\UCMouseCase3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMouse\UCMouseCase4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMouse\UCMouseCase5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMonitors\UCMonitorsCase0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMonitors\UCMonitorsCase1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMonitors\UCMonitorsCase2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMonitors\UCMonitorsCase3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMonitors\UCMonitorsCase4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsMonitors\UCMonitorsCase5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPC\UCPcCase9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPrimaryPage\UserControl1Keyboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPrimaryPage\UserControl1PrimaryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPrimaryPage\UserControlMonitors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPrimaryPage\UserControlMous.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsPrimaryPage\UserControlPCParts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\CałyZestawProjekt.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
